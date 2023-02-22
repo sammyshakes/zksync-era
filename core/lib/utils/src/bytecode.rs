@@ -1,3 +1,4 @@
+use zkevm_opcode_defs;
 use zksync_basic_types::H256;
 
 use crate::bytes_to_chunks;
@@ -40,8 +41,8 @@ pub fn validate_bytecode(code: &[u8]) -> Result<(), InvalidBytecodeError> {
 
 pub fn hash_bytecode(code: &[u8]) -> H256 {
     let chunked_code = bytes_to_chunks(code);
-    let hash = zk_evm::zkevm_opcode_defs::utils::bytecode_to_code_hash(&chunked_code)
-        .expect("Invalid bytecode");
+    let hash =
+        zkevm_opcode_defs::utils::bytecode_to_code_hash(&chunked_code).expect("Invalid bytecode");
 
     H256(hash)
 }
