@@ -6,6 +6,7 @@ pub mod utils;
 pub mod wallet;
 
 pub use crate::{ethereum::EthereumProvider, wallet::Wallet};
+pub use zksync_eth_signer;
 pub use zksync_types::network::Network;
 
 pub use zksync_types;
