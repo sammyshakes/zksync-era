@@ -3264,12 +3264,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "libm"
-version = "0.2.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "348108ab3fba42ec82ff6e9564fc4ca0247bdccdc68dd8af9764bbc79c3c8ffb"
-
-[[package]]
 name = "librocksdb-sys"
 version = "0.6.1+6.28.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3308,36 +3302,6 @@ name = "linux-raw-sys"
 version = "0.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f051f77a7c8e6957c0696eac88f26b0117e54f52d3fc682ab19397a8812846a4"
-
-[[package]]
-name = "loadnext"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "async-trait",
- "envy",
- "futures 0.3.26",
- "hex",
- "num 0.3.1",
- "once_cell",
- "rand 0.8.5",
- "rand_distr",
- "regex",
- "reqwest",
- "serde",
- "serde_json",
- "static_assertions",
- "thiserror",
- "tokio",
- "vlog",
- "zksync",
- "zksync_config",
- "zksync_eth_client",
- "zksync_eth_signer",
- "zksync_types",
- "zksync_utils",
- "zksync_web3_decl",
-]
 
 [[package]]
 name = "local-channel"
@@ -3835,7 +3799,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "578ede34cf02f8924ab9447f50c28075b4d3e5b269972345e7e0372b38c6cdcd"
 dependencies = [
  "autocfg 1.1.0",
- "libm",
 ]
 
 [[package]]
@@ -4690,16 +4653,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ec0be4795e2f6a28069bec0b5ff3e2ac9bafc99e6a9a7dc3547996c5c816922c"
 dependencies = [
  "getrandom 0.2.8",
-]
-
-[[package]]
-name = "rand_distr"
-version = "0.4.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "32cb0b9bc82b0a0876c2dd994a7e7a2683d3e7390ca40e6886785ef0c7e3ee31"
-dependencies = [
- "num-traits",
- "rand 0.8.5",
 ]
 
 [[package]]
@@ -7378,49 +7331,6 @@ dependencies = [
  "rocksdb",
  "serde",
  "vlog",
- "zksync_types",
- "zksync_utils",
-]
-
-[[package]]
-name = "zksync_test_account"
-version = "1.0.0"
-dependencies = [
- "num 0.3.1",
- "zksync_basic_types",
- "zksync_crypto",
- "zksync_types",
- "zksync_utils",
-]
-
-[[package]]
-name = "zksync_testkit"
-version = "1.0.0"
-dependencies = [
- "anyhow",
- "futures 0.3.26",
- "num 0.3.1",
- "once_cell",
- "rand 0.7.3",
- "serde",
- "serde_json",
- "structopt",
- "tempfile",
- "tokio",
- "vlog",
- "vm",
- "zksync_config",
- "zksync_contracts",
- "zksync_core",
- "zksync_crypto",
- "zksync_dal",
- "zksync_eth_client",
- "zksync_eth_signer",
- "zksync_mempool",
- "zksync_prover_utils",
- "zksync_state",
- "zksync_storage",
- "zksync_test_account",
  "zksync_types",
  "zksync_utils",
 ]
