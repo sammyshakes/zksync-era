@@ -66,33 +66,33 @@ impl ZkSyncAccount {
         *self.nonce.lock().unwrap() = new_nonce;
     }
 
-    pub fn sign_withdraw(
-        &self,
-        _token: Address,
-        _amount: U256,
-        _fee: Fee,
-        _to: Address,
-        _nonce: Option<Nonce>,
-        _increment_nonce: bool,
-    ) -> L2Tx {
-        // let mut stored_nonce = self.nonce.lock().unwrap();
-        // let withdraw = GenericL2Tx::<Withdraw>::new_signed(
-        //     token,
-        //     amount,
-        //     to,
-        //     nonce.unwrap_or(*stored_nonce),
-        //     fee,
-        //     L2ChainId(270),
-        //     &self.private_key,
-        // )
-        // .expect("should create a signed transfer transaction");
+    // pub fn sign_withdraw(
+    //     &self,
+    //     _token: Address,
+    //     _amount: U256,
+    //     _fee: Fee,
+    //     _to: Address,
+    //     _nonce: Option<Nonce>,
+    //     _increment_nonce: bool,
+    // ) -> L2Tx {
+    //     // let mut stored_nonce = self.nonce.lock().unwrap();
+    //     // let withdraw = GenericL2Tx::<Withdraw>::new_signed(
+    //     //     token,
+    //     //     amount,
+    //     //     to,
+    //     //     nonce.unwrap_or(*stored_nonce),
+    //     //     fee,
+    //     //     L2ChainId(270),
+    //     //     &self.private_key,
+    //     // )
+    //     // .expect("should create a signed transfer transaction");
 
-        // if increment_nonce {
-        //     **stored_nonce += 1;
-        // }
+    //     // if increment_nonce {
+    //     //     **stored_nonce += 1;
+    //     // }
 
-        // withdraw.into()
-    }
+    //     // withdraw.into()
+    // }
 
     pub fn sign_deploy_contract(
         &self,
