@@ -73,7 +73,7 @@ where
                 execute_calldata,
                 fee,
                 nonce,
-                Some(vec![bytecode.clone()]),
+                Some(factory_deps),
                 paymaster_params,
             )
             .await
